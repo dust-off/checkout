@@ -1,0 +1,22 @@
+{
+  "name": "checkout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dust-off/checkout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dust-off/checkout/issues"
+  },
+  "homepage": "https://github.com/dust-off/checkout#readme",
+  "dependencies": {
+    "react": "^16.3.1"
+  }
+}
