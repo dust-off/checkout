@@ -6,8 +6,19 @@ import thunk from 'redux-thunk';
 import rootReducer from './redux/reducers/root';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+// default state
+const state = {
+    test: [],
+    cart: {
+        name: '',
+        pw: '',
+        email: '',
+    },
+}
+
 const store = createStore(
     rootReducer,
+    state,
     composeWithDevTools(applyMiddleware(thunk))
 );
 
@@ -33,6 +44,8 @@ const Root = () => (
         </Router>
     </Provider>
 )
+
+// store.dispatch({ type: 'RUN_TEST', payload: 'thing'})
 
 // -------------- RENDER -------------- \\
 import { render } from 'react-dom'
