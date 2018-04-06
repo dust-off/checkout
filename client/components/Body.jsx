@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom'
 import Page0 from './containers/page0.js'
-import Page1 from './checkout/page1.jsx'
+import Page1 from './containers/page1.js'
 import Page2 from './checkout/page2.jsx'
 import Page3 from './checkout/page3.jsx'
 

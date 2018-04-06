@@ -7,12 +7,21 @@ import rootReducer from './redux/reducers/root';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 // default state
+// ship to address(line 1, line 2, city, state, zip code) and phone number.
 const state = {
     test: [],
     cart: {
         name: '',
         pw: '',
         email: '',
+        address: {
+            line1: '',
+            line2: '',
+            city: '',
+            state: '',
+            zip: '',
+        },
+        phoneNumber: '',
     },
 }
 

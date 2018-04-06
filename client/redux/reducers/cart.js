@@ -20,6 +20,16 @@ export function cartReducer(state = {}, action) {
                 email: action.payload
             })
             break;
+        case 'UPDATE_ADDRESS':
+            console.log('UPDATE_ADDRESS')
+            const address = Object.assign({}, state.address, action.payload)
+            state = Object.assign({}, state, {address})
+            break;
+        case 'UPDATE_PHONE':
+            console.log('UPDATE_PHONE')
+            state = Object.assign({}, state, {
+                phoneNumber: action.payload
+            })
         default:
             return state;
     }

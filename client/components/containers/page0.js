@@ -23,9 +23,9 @@ var mapDispatchToProps = (dispatch) => ({
     },
 });
 
-var GraphContainer = connect(
+var page0Container = connect(
     mapStateToProps,
     mapDispatchToProps,
 )(page0);
 
-export default GraphContainer;
+export default page0Container;
